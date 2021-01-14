@@ -93,7 +93,7 @@ let myColor = "";
 let myPic = "images/"
 
 //TEST ONLY - REMOVE THIS
-myHour = 9; 
+myHour = 24; 
 
 if(myHour >= 5 && myHour <12){
 	myGreeting = "Good Morning?";
@@ -106,8 +106,24 @@ if(myHour >= 5 && myHour <12){
     myColor = "orange";
 	myPic += "afternoon.jpg";
 
+
+} else if (myHour >= 18 && myHour <23) {
+
+	myGreeting = "Good Evening?";
+	myColor = "pink";
+	myPic += "evening.jpg";
+
+
+
 	}else{
 		alert('NOT morning');
+
+	myGreeting = "Good Night?";
+	myColor = "blue";
+	myPic += "night.jpg";
+
+		
+
 	}
 
 
